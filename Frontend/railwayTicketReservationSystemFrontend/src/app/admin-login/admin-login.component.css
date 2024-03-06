@@ -1,0 +1,88 @@
+.navigation input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+header p {
+  margin-left: 20px;
+}
+header {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #14b380;
+  padding: 1px;
+  color: white;
+}
+footer {
+  background-color: #14b380;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  margin-top: -5px;
+}
+ul {
+  background-color: #03593e;
+  padding: 15px;
+  margin-top: auto;
+  text-align: center;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  display: inline;
+  padding: 20px;
+  margin: 2px;
+  text-decoration: none;
+}
+img {
+  margin-top: -16px;
+  width: 94em;
+  height: 33em;
+}
+div p {
+  position: absolute;
+  top: 250px;
+  color: white;
+  left: 50px;
+  font-size: 50px;
+}
+
+.container {
+  width: 35%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+}
+
+.loginBtn {
+  background-color: #a480ff;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+}
+form {
+  border: 3px solid #f1f1f1;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+button:hover {
+  opacity: 0.7;
+}
+.login {
+  text-align: center;
+}

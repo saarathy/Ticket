@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="heading"><p>All Bookings</p></div>
+
+    <!-- <div>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>PNR No:</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>Train Name:</td>
+                <td>zzz</td>
+            </tr>
+            <tr>
+                <td>Passenger Name:</td>
+                <td>xxx</td>
+            </tr>
+            <tr>
+                <td>Passenger PhNo:</td>
+                <td>ccc</td>
+            </tr>
+            <tr>
+                <td>Passenger Email:</td>
+                <td>vvvv</td>
+            </tr>
+            <tr>
+                <td>Source:</td>
+                <td>bbb</td>
+            </tr>
+            <tr>
+                <td>Destination:</td>
+                <td>nnn</td>
+            </tr>
+            <tr>
+                <td>Total Price:</td>
+                <td>mmm</td>
+            </tr>
+            <tr>
+                <td>Number of Tickets:</td>
+                <td></td>
+            </tr>
+        </table>
+    </div> -->
+
+    <table>
+        <tr>
+            <th>PNR No</th>
+            <th>Train Name</th>
+            <th>Passenger Name</th>
+            <th>Passenger PhNo</th>
+            <th>Passenger Email</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Number of Ticket</th>
+            <th>Total Price</th>
+            
+            <th>Cancel Ticket</th>
+        </tr>
+        <tr *ngFor="let ticket of bookings">
+            <td>{{ticket.pnrNo}}</td>
+            <td>{{ticket.trainName}}</td>
+            <td>{{ticket.passengerName}}</td>
+            <td>{{ticket.passengerPhNo}}</td>
+            <td>{{ticket.passengerEmail}}</td>
+            <td>{{ticket.source}}</td>
+            <td>{{ticket.destination}}</td>
+            <td>{{ticket.noOfTickets}}</td>
+            <td>{{ticket.totalPrice}}</td>
+            <td><input type="button" value="Cancel Ticket" class="button" (click)="deleteTicket(ticket.pnrNo)"></td>
+        </tr>
+    </table>
+</div>
+<br>
+
+<footer><p>©Copyright: Online Ticket Reservation System</p></footer>

@@ -1,0 +1,47 @@
+<p class="title">Booking Details</p>
+
+<div class="container">
+        
+    <table>
+        <tr>
+            <td>PNR No:</td>
+            <td>{{ticket.pnrNo}}</td>
+        </tr>
+        <tr>
+            <td>Train Name:</td>
+            <td>{{ticket.trainName}}</td>
+        </tr>
+        <tr>
+            <td>Passenger Name:</td>
+            <td>{{ticket.passengerName}}</td>
+        </tr>
+        <tr>
+            <td>Passenger Phone No:</td>
+            <td>{{ticket.passengerPhNo}}</td>
+        </tr>
+        <tr>
+            <td>Passenger Email:</td>
+            <td>{{ticket.passengerEmail}}</td>
+        </tr>
+        <tr>
+            <td>Source:</td>
+            <td>{{ticket.source}}</td>
+        </tr>
+        <tr>
+            <td>Destination:</td>
+            <td>{{ticket.destination}}</td>
+        </tr>
+        <tr>
+            <td>No Of Ticket:</td>
+            <td>{{ticket.noOfTicket}}</td>
+        </tr>
+        <tr>
+            <td>Total Price:</td>
+            <td>{{ticket.totalPrice}}</td>
+        </tr>
+    </table>
+    <button type="submit" (click)="payment()">Pay</button>
+</div>
+<br>
+<br>
+<footer><p>©Copyright: Online Ticket Reservation System</p></footer>

@@ -1,0 +1,31 @@
+<div>
+    <p>Book Ticket</p>
+</div>
+
+<div class="container">
+    <label for="trainId">Train Id:</label><br>
+    <input type="number" [(ngModel)]="trainId" placeholder="Enter train id" name="trainId" required><br>
+
+    <!-- [(ngModel)]="trainId" -->
+    <label for="passengerName">Passenger name:</label><br>
+    <input type="text" [(ngModel)]="ticket.passengerName" placeholder="Enter your name" name="passengerName" required><br>
+
+    <label for="mobileNo">Passenger phno:</label><br>
+    <input type="text" [(ngModel)]="ticket.passengerPhNo" placeholder="Enter your mobile number" name="mobileNo" required><br>
+
+    <label for="email">Passenger email:</label><br>
+    <input type="email" [(ngModel)]="ticket.passengerEmail" placeholder="Enter your email" name="email" required><br>
+
+    <label for="ticket">Enter No of Ticket:</label><br>
+    <input type="number" [(ngModel)]="ticket.noOfTickets" placeholder="Enter number of ticket" name="ticket" required><br>
+
+    <button type="submit" (click)="bookTicket()">Confirm</button>
+    
+    <a href="http://localhost:8090" class="payment">Payment</a>
+</div>
+
+<div>
+    <p class="successMessage">{{message}}</p>
+</div>
+
+<footer><p>©Copyright: Online Ticket Reservation System</p></footer>

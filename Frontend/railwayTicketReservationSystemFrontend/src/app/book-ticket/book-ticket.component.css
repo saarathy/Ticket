@@ -1,0 +1,111 @@
+.navigation input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+header p {
+  margin-left: 20px;
+}
+header {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #14b380;
+  padding: 1px;
+  color: white;
+}
+footer {
+  background-color: #14b380;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  margin-top: -5px;
+}
+ul {
+  background-color: #03593e;
+  padding: 15px;
+  margin-top: auto;
+  text-align: center;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  display: inline;
+  padding: 20px;
+  margin: 2px;
+  text-decoration: none;
+}
+div .successMessage {
+  font-size: 20px;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div p {
+  color: Black;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.container {
+  width: 35%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .container button .payment {
+  padding-top: 10px;
+} */
+.container button {
+  justify-content: center;
+}
+
+button {
+  background-color: #a480ff;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  /* margin: 10px 180px;  */
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+button:hover {
+  opacity: 0.7;
+}
+.payment {
+  display: block;
+  /* width: 520px; */
+  width: 100%;
+  height: 25px;
+  background: #a480ff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  line-height: 25px;
+}
+.payment:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,40 @@
+
+
+
+<form class="searchdiv" method="post">
+    <input #source type="text" placeholder="Enter Source" class="input" name="source" id="source">
+    <!-- *ngModel -->
+    <input #destination type="text" placeholder="Enter Destination" class="input" name="destination" id="destination">
+    <input type="submit" value="Search" class="button" (click)="searchTrain(source.value,destination.value)">
+    <input type="submit" value="Reset" class="button" (click)="reset()">
+</form>
+<br>
+
+<div class="container">
+    <table>
+        <tr>
+            <th>Train Id</th>
+            <th>Train Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Ticket Fare</th>
+            <th>Book Ticket</th>
+        </tr>
+        <tr *ngFor="let train of trains">
+            <td>{{train.trainId}}</td>
+            <td>{{train.trainName}}</td>
+            <td>{{train.fromStation}}</td>
+            <td>{{train.toStation}}</td>
+            <td>{{train.date}}</td>
+            <td>{{train.time}}</td>
+            <td>{{train.ticketFare}}</td>
+            <td><input type="button" value="Book Ticket" class="button" (click)="bookTicket(train.id)"></td>
+        </tr>
+    </table>
+</div>
+<br>
+
+<footer><p>©Copyright: Online Ticket Reservation System</p></footer>
+

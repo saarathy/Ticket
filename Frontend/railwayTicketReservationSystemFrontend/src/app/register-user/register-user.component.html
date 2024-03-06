@@ -1,0 +1,82 @@
+
+<form>
+    <div>
+        <p>Register User</p>
+    </div>
+    <div class="container"> 
+            <hr>
+            <label for="username"><b>Username</b></label>
+            <input type="text" [(ngModel)]="user.userName" placeholder="Enter Username" name="username" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" [(ngModel)]="user.userEmail" placeholder="Enter Email" name="email" required>
+
+            <label for="number"><b>Mob Number</b></label>
+            <input type="text" [(ngModel)]="user.userPhoneNo" placeholder="Enter Mob Number" name="number" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" [(ngModel)]="user.userPassword" placeholder="Enter Password" name="psw" required>
+            <hr>
+        <button type="submit" (click)="registerNow()">Register</button> 
+        
+    </div>
+    
+    <div>
+        <p class="successMessage">{{message}}</p>
+    </div>
+</form>
+
+
+
+
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <legend class="text-center">Valid information is required to register. <span class="req"><small>
+                                required *</small></span></legend>
+
+                    <div class="form-group">
+                        <label for="Name"><span class="req">* </span> Name: <small>This will be your login user
+                                name</small> </label>
+                        <input required type="text" [(ngModel)]="user.userName" name="name" id="name"
+                            class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstname"><span class="req">* </span> Email: </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.userEmail" name="email" id="txt" required
+                            placeholder="Enter valid email address" />
+                        <div id="errFirst"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname"><span class="req">* </span> Experience : </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.userPassword" name="experience" id="txt"
+                            placeholder="Total year of experience" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><span class="req">* </span> Developer: </label>
+                        <input class="form-control" required type="text" [(ngModel)]="user.userPhoneNo" name="domain"
+                            id="email" placeholder="fullstack/backend/developer" />
+                        <div class="status" id="status"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+                    </div>
+                </fieldset>
+            </form>
+            
+        </div>
+
+    </div>
+</div> -->

@@ -1,0 +1,33 @@
+
+<form>
+    <div>
+        <p>Add Train</p>
+    </div>
+    <div class="container"> 
+            <hr>
+            <label for="trainName"><b>Train Name</b></label>
+            <input type="text" [(ngModel)]="train.trainName" placeholder="Enter Train Name" name="trainName" required>
+
+            <label for="source"><b>Source</b></label>
+            <input type="email" [(ngModel)]="train.fromStation" placeholder="Enter Source" name="source" required>
+
+            <label for="destination"><b>Destination</b></label>
+            <input type="text" [(ngModel)]="train.toStation" placeholder="Enter Destination" name="destination" required>
+        
+            <label for="ticketFare"><b>Ticket Fare</b></label>
+            <input type="number" [(ngModel)]="train.ticketFare" placeholder="Enter Ticket Fare" name="ticketFare" required>
+
+            <label for="date"><b>Date</b></label>
+            <input type="date" [(ngModel)]="train.date" placeholder="Enter Data" name="date" required>
+
+            <label for="time"><b>Time</b></label>
+            <input type="time" [(ngModel)]="train.time" placeholder="Enter Time" name="time" required>
+            <hr>
+        <button type="submit" (click)="addNewTrain()">Add+</button> 
+        
+    </div>
+    
+    <div>
+        <p class="successMessage">{{message}}</p>
+    </div>
+</form>

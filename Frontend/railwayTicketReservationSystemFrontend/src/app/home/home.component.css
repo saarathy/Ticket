@@ -1,0 +1,19 @@
+img {
+  margin-top: -16px;
+  width: 94em;
+  height: 33em;
+}
+div p {
+  position: absolute;
+  top: 250px;
+  color: white;
+  left: 50px;
+  font-size: 50px;
+}
+footer {
+  background-color: #14b380;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  margin-top: -5px;
+}

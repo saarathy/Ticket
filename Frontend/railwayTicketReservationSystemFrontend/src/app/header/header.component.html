@@ -1,0 +1,19 @@
+<header><p>Online Ticket Reservation System</p></header>
+    
+    <div>
+        <ul>
+            <li> <a routerLink="/home">Home</a></li>
+            <li *ngIf="!isLoggedIn() || (isLoggedIn() && getUser().role!=='admin')"><a routerLink="/searchTrain">Search Train</a></li>
+            <li *ngIf="isLoggedIn() && getUser().role==='admin'"><a routerLink="/adminSearchTrain">Search Train</a></li>
+            <li *ngIf="isLoggedIn() && getUser().role==='admin'"><a routerLink="/addTrain">Add Train</a></li>
+            <li *ngIf="isLoggedIn() && getUser().role==='admin'"><a routerLink="/allBookings">All Bookings</a></li>
+            <li *ngIf="isLoggedIn() && getUser().role!=='admin'"><a routerLink="/bookings">Bookings</a></li>
+            <li *ngIf="isLoggedIn() && getUser().role!=='admin'"><a routerLink="/updateUser">Update User</a></li>
+            <li *ngIf="! isLoggedIn()"><a routerLink="/login">Login</a></li>
+            <li *ngIf="! isLoggedIn()"><a routerLink="/register">Sign up</a></li>
+            <li *ngIf="! isLoggedIn()"><a routerLink="/adminLogin">Admin Login</a></li>
+            <li *ngIf="isLoggedIn()"><a (click)="logout()" style="cursor: pointer;">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- *ngIf="!isLoggedIn() || isLoggedIn() && getUser().role!=='admin'" -->
